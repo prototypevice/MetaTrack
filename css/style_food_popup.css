@@ -1,0 +1,63 @@
+body {
+    font-family: Arial;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.sidebar {
+    background: hotpink;
+    width: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.food-item {
+    background: lightgreen;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.food-item:hover {
+    background: #7ed957;
+}
+.content {
+    flex: 1;
+    background: #00c4cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nutrition {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.add-btn {
+    background: lightgreen;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.add-btn:hover {
+    background: #7ed957;
+}
+.close-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: cyan;
+    color: red;
+    border: none;
+    padding: 12px 20px;
+    font-size: 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
