@@ -1,0 +1,63 @@
+.success-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 80vh;
+  background-color: #f5fff9;
+  text-align: center;
+}
+
+.success-login-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.success-icon {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.redirect-timer {
+  margin-top: 30px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.redirect-timer svg {
+  transform: rotate(-90deg);
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #e6f2ec;
+  stroke-width: 10;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: #28a745;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 282.6;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #28a745;
+  font-size: 20px;
+}
