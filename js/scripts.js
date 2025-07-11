@@ -89,3 +89,25 @@ document.querySelectorAll(".faq-question").forEach(button => {
     }
   });
 });
+
+// Drop down toggle
+function toggleDropdown() {
+  const dropdown = document.getElementById("userDropdown");
+  const icon = document.querySelector(".dropdown-icon");
+  dropdown.classList.toggle("show");
+  icon.classList.toggle("rotate");
+}
+
+// Close dropdown if clicking outside
+window.addEventListener("click", function (e) {
+  const dropdown = document.getElementById("userDropdown");
+  const button = document.querySelector(".user-btn");
+
+  if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+    dropdown.classList.remove("show");
+    document.querySelector(".dropdown-icon").classList.remove("rotate");
+  }
+});
+
+
+

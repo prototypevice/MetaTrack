@@ -17,7 +17,7 @@
     <div class="success-login-container animate">
       <img src="assets/images/icons/checkmark.svg" alt="Success Icon" class="success-icon">
       <h2>Welcome back to <span class="brand">MetaTrack</span>!</h2>
-      <p class="success-message">You’ve successfully logged in. Let’s continue your health journey.</p>
+      <p class="success-message">You've successfully logged in. Let's continue your health journey.</p>
 
       <div class="redirect-timer">
 

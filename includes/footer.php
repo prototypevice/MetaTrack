@@ -7,7 +7,7 @@
     <div class="footer-container">
 
       <div class="footer-brand">
-        <img src="assets/images/logo.png" alt="MetaTrack Logo">
+        <img src="/MetaTrack/assets/images/logo.png" alt="MetaTrack Logo">
         <p>Your wellness journey, simplified.</p>
       </div>
 
@@ -39,6 +39,6 @@
 
 <?php endif; ?>
 
-    <script src="js/scripts.js"></script>
+    <script src="/MetaTrack/js/scripts.js"></script>
     </body>
 </html>

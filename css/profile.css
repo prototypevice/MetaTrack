@@ -1,0 +1,87 @@
+/* -------- CSS FOR THE PROFILE INPUT PART  -------- */
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 80vh;
+  background-color: #f5fff9;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.profile-card h2 {
+  color: #28a745;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.profile-card p {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-form input[type="number"] {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-form input[type="number"]:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.input-form button {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-form button:hover {
+  background-color: #218838;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 30px 20px;
+  }
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
