@@ -39,9 +39,17 @@
                 <i class="fas fa-cog"></i><span>Settings</span>
               </a>
 
-              <a href="#" onclick="toggleDarkMode(); return false;">
-                <i class="fas fa-moon"></i><span>Dark Mode</span>
-              </a>
+              <div class="dropdown-toggle-item">
+
+                <i class="fas fa-moon"></i>
+                <span>Dark Mode</span>
+                
+                <label class="switch">
+                  <input type="checkbox" id="darkModeToggle">
+                  <span class="slider round"></span>
+                </label>
+
+              </div>
 
               <a href="/MetaTrack/auth/logout.php">
                 <i class="fas fa-sign-out-alt"></i><span>Logout</span></a>

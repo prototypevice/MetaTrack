@@ -111,3 +111,22 @@ window.addEventListener("click", function (e) {
     document.querySelector(".dropdown-icon").classList.remove("rotate");
   }
 });
+
+// Dark mode Switch Toggle
+function applyDarkMode(enabled) {
+  document.body.classList.toggle('dark-mode', enabled);
+  localStorage.setItem('darkMode', enabled ? 'on' : 'off');
+}
+
+// Initialize based on saved preference
+window.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('darkModeToggle');
+  const isDark = localStorage.getItem('darkMode') === 'on';
+
+  applyDarkMode(isDark);
+  toggle.checked = isDark;
+
+  toggle.addEventListener('change', () => {
+    applyDarkMode(toggle.checked);
+  });
+});
