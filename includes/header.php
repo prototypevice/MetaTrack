@@ -34,9 +34,17 @@
             </button>
 
             <div class="dropdown-menu" id="userDropdown">
-              <a href="/MetaTrack/settings.php"><i class="fas fa-cog"></i> Settings</a>
-              <a href="#" onclick="toggleDarkMode(); return false;"><i class="fas fa-moon"></i> Dark Mode</a>
-              <a href="/MetaTrack/auth/logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+              
+              <a href="/MetaTrack/settings.php">
+                <i class="fas fa-cog"></i><span>Settings</span>
+              </a>
+
+              <a href="#" onclick="toggleDarkMode(); return false;">
+                <i class="fas fa-moon"></i><span>Dark Mode</span>
+              </a>
+
+              <a href="/MetaTrack/auth/logout.php">
+                <i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
             </div>
 
           </div>

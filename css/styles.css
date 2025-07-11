@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -69,10 +73,6 @@ nav {
   text-align: center;
 }
 
-.features-header {
-  background-color: black;
-}
-
 .features-header h2 {
   font-size: 36px;
   color: #2c3e50;
@@ -138,6 +138,7 @@ nav {
   transition: opacity 0.3s ease;
   pointer-events: none;
   text-align: left;
+  overflow: hidden; /* ✅ KEEP this */
 }
 
 .dropdown-menu.show {
@@ -148,18 +149,20 @@ nav {
 
 .dropdown-menu a,
 .dropdown-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
   padding: 12px 16px;
-  text-align: left;
   background: none;
   border: none;
   font-size: 14px;
   color: #333;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
+  text-align: left;
   text-decoration: none;
+  gap: 10px;
 }
 
 .dropdown-menu a:hover,
@@ -167,6 +170,16 @@ nav {
   background-color: #f5f5f5;
 }
 
+.dropdown-menu a i,
+.dropdown-menu button i {
+  min-width: 20px;
+  text-align: center;
+}
+
+.dropdown-menu i {
+  min-width: 16px;
+  text-align: center;
+}
 
 .features-grid {
   display: flex;
