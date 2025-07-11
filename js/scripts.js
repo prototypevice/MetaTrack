@@ -18,16 +18,16 @@ window.addEventListener("DOMContentLoaded", () => {
 const testimonials = [
   {
     text: "“MetaTrack made it easy for me to stay on track. I lost 8kg in 2 months!”",
-    author: "- Igon D."
+    author: "- Igon D.",
   },
   {
     text: "“I love the clean UI and smooth tracking. Highly recommended.”",
-    author: "- Joey C."
+    author: "- Joey C.",
   },
   {
     text: "“The best app I’ve used to manage my nutrition goals!”",
-    author: "- Jason A."
-  }
+    author: "- Jason A.",
+  },
 ];
 
 let currentTestimonial = 0;
@@ -54,32 +54,35 @@ function changeTestimonial(direction) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
 
-  document.querySelectorAll(".scroll-animate").forEach(el => {
+  document.querySelectorAll(".scroll-animate").forEach((el) => {
     observer.observe(el);
   });
 });
 
-document.querySelectorAll(".faq-question").forEach(button => {
+document.querySelectorAll(".faq-question").forEach((button) => {
   button.addEventListener("click", () => {
     const answer = button.nextElementSibling;
     const arrow = button.querySelector(".arrow");
 
     const isOpen = answer.classList.contains("open");
 
-    document.querySelectorAll(".faq-answer").forEach(a => {
+    document.querySelectorAll(".faq-answer").forEach((a) => {
       a.classList.remove("open");
-    });
-    document.querySelectorAll(".arrow").forEach(ar => {
+    }); 
+    document.querySelectorAll(".arrow").forEach((ar) => {
       ar.classList.remove("rotate");
     });
 
@@ -108,6 +111,3 @@ window.addEventListener("click", function (e) {
     document.querySelector(".dropdown-icon").classList.remove("rotate");
   }
 });
-
-
-

@@ -69,6 +69,10 @@ nav {
   text-align: center;
 }
 
+.features-header {
+  background-color: black;
+}
+
 .features-header h2 {
   font-size: 36px;
   color: #2c3e50;
