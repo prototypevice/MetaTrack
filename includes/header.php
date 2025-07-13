@@ -34,25 +34,26 @@
             </button>
 
             <div class="dropdown-menu" id="userDropdown">
-              
-              <a href="/MetaTrack/settings.php">
-                <i class="fas fa-cog"></i><span>Settings</span>
-              </a>
+
+                <a href="/MetaTrack/settings.php" class="dropdown-item">
+                  <i class="fas fa-cog"></i>
+                  <span>Settings</span>
+                </a>
 
               <div class="dropdown-toggle-item">
-
                 <i class="fas fa-moon"></i>
                 <span>Dark Mode</span>
-                
                 <label class="switch">
                   <input type="checkbox" id="darkModeToggle">
                   <span class="slider round"></span>
                 </label>
-
               </div>
 
-              <a href="/MetaTrack/auth/logout.php">
-                <i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+              <a href="/MetaTrack/auth/logout.php" class="dropdown-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+              </a>
+
             </div>
 
           </div>
